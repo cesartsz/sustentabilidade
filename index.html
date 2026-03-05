@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- Essa tag é muito importante para o site funcionar em celulares (design responsivo) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuro Sustentável 2026</title>
+    <!-- Aqui estamos ligando o CSS (estilo) ao nosso HTML -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO DO SITE (MENU) -->
+    <!-- É o menu no topo que você pediu -->
+    <header>
+        <nav>
+            <ul>
+                <!-- Os links "#introducao" levam para as seções com o mesmo id lá embaixo -->
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#contexto">Contexto 2026</a></li>
+                <li><a href="#dados">Dados</a></li>
+                <li><a href="#acao">Ação Proposta</a></li>
+                <li><a href="#conclusao">Conclusão</a></li>
+            </ul>
+        </nav>
+        <!-- Título principal do site, igual ao do seu slide -->
+        <h1>FUTURO SUSTENTÁVEL: O EQUILÍBRIO ENTRE PRODUÇÃO E MEIO AMBIENTE EM 2026</h1>
+        <p class="subtitulo">Aluno: Cesar/Gemini | 2º Ano Ensino Médio</p>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL DO SITE -->
+    <main>
+
+        <!-- SEÇÃO 1: INTRODUÇÃO (equivalente à página 1 dos slides) -->
+        <section id="introducao">
+            <h2>1. Introdução</h2>
+            <!-- Usamos a classe "card" para dar um estilo de cartão bonito -->
+            <div class="card">
+                <p>No cenário global de 2026, a sustentabilidade deixou de ser um conceito abstrato para se tornar uma necessidade econômica e de sobrevivência. O equilíbrio entre a produção industrial/agrícola e a preservação ambiental enfrenta desafios sem precedentes, como a intensificação de eventos climáticos extremos. O foco atual reside na transição da economia linear ("extrair, produzir, descartar") para uma economia circular, onde o valor dos recursos é mantido o maior tempo possível no ciclo produtivo.</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: CONTEXTO ATUAL (página 2) -->
+        <section id="contexto">
+            <h2>2. O Contexto Atual (2026)</h2>
+            <div class="card">
+                <p>Atualmente, as metas estabelecidas no Acordo de Paris e os Objetivos de Desenvolvimento Sustentável (ODS) da ONU estão sob forte monitoramento. No Brasil, o setor produtivo tem buscado alinhar a alta produtividade do agronegócio com tecnologias de baixa emissão de carbono. O uso de IA (Inteligência Artificial) para monitorar o desmatamento em tempo real e otimizar o uso de água na indústria é a principal tendência do ano.</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: DADOS E COMPARATIVOS (página 3) -->
+        <section id="dados">
+            <h2>3. Dados e Comparativos</h2>
+            <!-- Área para os cards de tópicos (Gestão de Resíduos, etc) -->
+            <div class="topicos">
+                <div class="topico-card">
+                    <h3>1. GESTÃO DE RESÍDUOS</h3>
+                    <p>Logística reversa e reciclagem avançada.</p>
+                </div>
+                <div class="topico-card">
+                    <h3>2. USO DA ÁGUA</h3>
+                    <p>Reuso de água e sistemas de ciclo fechado.</p>
+                </div>
+                <div class="topico-card">
+                    <h3>3. MATRIZ ENERGÉTICA</h3>
+                    <p>Predomínio de fontes renováveis (Solar/Eólica/Hidrogênio).</p>
+                </div>
+                <div class="topico-card">
+                    <h3>4. EMISSÕES DE CO2</h3>
+                    <p>Metas de "Carbono Neutro" e créditos de carbono.</p>
+                </div>
+            </div>
+            <!-- Tabela comparativa que estava nos slides -->
+            <div class="card">
+                <h3>Comparativo de Eficiência</h3>
+                <p><strong>Modelo Tradicional:</strong> Alto consumo de água e agrotóxicos.</p>
+                <p><strong>Modelo Sustentável (Ex: Aeroponia):</strong> Reduz o uso de água em até 95% comparado à agricultura tradicional e elimina a necessidade de agrotóxicos.</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 4: AÇÃO PROPOSTA (página 4) -->
+        <section id="acao">
+            <h2>4. Ação Proposta: Hortas Verticais Urbanas Inteligentes</h2>
+            <div class="card">
+                <p><strong>O QUE É:</strong> Cultivo de plantas em estruturas verticais onde as raízes ficam suspensas e recebem uma névoa de nutrientes (Aeroponia).</p>
+                <p><strong>VANTAGEM AMBIENTAL:</strong> Reduz o uso de água em até 95% comparado à agricultura tradicional e elimina a necessidade de agrotóxicos.</p>
+                <p><strong>VANTAGEM LOGÍSTICA:</strong> Produz alimentos dentro das cidades, reduzindo drasticamente a emissão de CO2 causada pelo transporte de carga de longas distâncias.</p>
+                <!-- ÁREA INTERATIVA DO JAVASCRIPT -->
+                <div class="interativo">
+                    <p id="textoClique">Clique no botão para saber mais!</p>
+                    <button id="meuBotao">Mais Informações</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 5: CONCLUSÃO (página 5) -->
+        <section id="conclusao">
+            <h2>5. Conclusão</h2>
+            <div class="card">
+                <p>Conclui-se que o equilíbrio entre produção e meio ambiente em 2026 depende da integração tecnológica e da mudança de comportamento da sociedade. A produção sustentável não deve ser vista como um entrave ao crescimento, mas como o único caminho viável para garantir a segurança alimentar e a estabilidade climática das futuras gerações. O investimento em energias limpas e em métodos de produção circulares é o pilar que sustenta essa nova era.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>Trabalho de Geografia/Biologia - 2026</p>
+    </footer>
+
+    <!-- Aqui estamos ligando o JavaScript (interatividade) ao nosso HTML. 
+    A tag "script" deve vir no final para garantir que o HTML já carregou antes do JS tentar encontrar os elementos -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+/* === ESTILOS GERAIS - O que vale para tudo === */
+/* Aplicamos uma fonte mais moderna e resetamos margens/paddings para começar do zero */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Faz o elemento respeitar o tamanho que a gente mandar */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte legal */
+    line-height: 1.6; /* Altura da linha para ficar fácil de ler */
+    color: #333; /* Cor do texto principal (cinza escuro) */
+    background-color: #f0f8ff; /* Um azul bem clarinho (Azure) para o fundo geral */
+}
+
+/* === CABEÇALHO (MENU E TÍTULO PRINCIPAL) === */
+header {
+    background-color: #1a4d2e; /* Verde escuro, cor da natureza */
+    color: white;
+    padding: 20px 0; /* Espaço interno em cima e embaixo */
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem; /* Tamanho da fonte responsivo */
+    margin: 15px 0 5px;
+    padding: 0 15px; /* Espaço nas laterais */
+}
+
+.subtitulo {
+    font-size: 1.1rem;
+    color: #b8e0c2; /* Verde mais claro */
+}
+
+/* Estilizando o menu de navegação */
+nav ul {
+    list-style: none; /* Tira as bolinhas da lista */
+    display: flex; /* Coloca os itens um do lado do outro */
+    justify-content: center; /* Centraliza o menu */
+    flex-wrap: wrap; /* Se não couber na tela, quebra pra linha de baixo (importante no celular) */
+    gap: 15px; /* Espaço entre os itens */
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none; /* Tira o sublinhado do link */
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px; /* Arredonda as bordas */
+    transition: background-color 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse por cima do link do menu */
+nav a:hover {
+    background-color: #2ecc71; /* Verde mais vibrante */
+}
+
+/* === SEÇÕES === */
+section {
+    padding: 40px 20px; /* Espaço em volta de cada seção */
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo na tela */
+}
+
+/* Títulos de cada seção (1. Introdução, etc) */
+section h2 {
+    color: #1a4d2e; /* Verde escuro */
+    font-size: 2rem;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #3498db; /* Linha azul embaixo do título */
+    padding-bottom: 10px;
+}
+
+/* === CARDS (OS QUADRADOS BRANCOS DE CONTEÚDO) === */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave para dar profundidade */
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #2c3e50; /* Azul acinzentado */
+    margin-bottom: 15px;
+}
+
+/* === ÁREA DOS TÓPICOS (GESTÃO DE RESÍDUOS, ETC) === */
+.topicos {
+    display: grid; /* Layout em grade */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Cria colunas que se adaptam à tela */
+    gap: 20px; /* Espaço entre os cards */
+    margin-bottom: 30px;
+}
+
+.topico-card {
+    background-color: #e8f4f8; /* Azul bem clarinho */
+    border-left: 5px solid #1a4d2e; /* Detalhe verde na lateral */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.topico-card h3 {
+    color: #1a4d2e;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* === ÁREA INTERATIVA DO JAVASCRIPT === */
+.interativo {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e8f8f0; /* Verde clarinho */
+    border-radius: 8px;
+    text-align: center;
+}
+
+#meuBotao {
+    background-color: #3498db; /* Azul */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer; /* Muda o cursor para "mãozinha" */
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#meuBotao:hover {
+    background-color: #1a4d2e; /* Muda para verde ao passar o mouse */
+}
+
+/* === RODAPÉ === */
+footer {
+    background-color: #1a4d2e; /* Verde escuro */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* === DESIGN RESPONSIVO - AJUSTES PARA TELAS PEQUENAS (CELULAR) === */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.3rem; /* Título menor no celular */
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    .topicos {
+        grid-template-columns: 1fr; /* Apenas uma coluna no celular */
+    }
+
+    nav ul {
+        flex-direction: column; /* Menu em coluna no celular */
+        gap: 8px;
+    }
+}
